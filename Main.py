@@ -1,5 +1,6 @@
 import random
 
+# This program calculates the chance of winning for the attacker, in Risk.
 # The attacker wins if all defenders are eliminated.
 # The defender wins if the number of attackers reaches 1.
 
@@ -48,7 +49,7 @@ for initial_num_def in range (1, max_num_attackers + 1):
             else:
                 def_wins += 1
         
-        # Print chance of winning
+        # Print chance of winning for attackers
         chance_att_win = att_wins / simulations_per_scenario
         print("{}%".format(int(chance_att_win * 100)), end = "\t")
     print("")
