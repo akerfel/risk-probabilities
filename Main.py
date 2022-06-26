@@ -3,10 +3,10 @@ import random
 # The attacker wins if all defenders are eliminated.
 # The defender wins if the number of attackers reaches 1.
 
-simulations_per_scenario = 10000
+simulations_per_scenario = 1000
 
-max_num_attackers = 10
-max_num_defenders = 10
+max_num_attackers = 20
+max_num_defenders = 20
 
 # Print column headers, i.e. number of attackers
 print("-\t", end="")
@@ -59,21 +59,3 @@ for initial_num_def in range (1, max_num_attackers + 1):
         chance_att_win_prcnt = int(chance_att_win * 100)
         print("{}%".format(chance_att_win_prcnt), end = "\t")
     print("")
-
-
-"""
-    for initial_num_att in range (2, 21):
-        for initial_num_def in range (1, 21):
-
-
-    if num_def == 0:
-        print("Attacker wins!")
-    else:
-        print("Defender wins!")
-
-
-print("Attacker wins:", att_wins)
-print("Defender wins:", def_wins)
-chance_att_win = att_wins / num_simulations
-print("Chance attacker wins:", chance_att_win)
-            """
