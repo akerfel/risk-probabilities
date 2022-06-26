@@ -25,7 +25,6 @@ for initial_num_def in range (1, max_num_attackers + 1):
 
             # Kill troops until someone wins
             while(num_att > 1 and num_def > 0):
-
                 # Determine number of dice
                 att_dice = min(num_att - 1, 3)
                 def_dice = min(num_def, 3)
