@@ -26,19 +26,13 @@ for initial_num_def in range (1, max_num_attackers + 1):
             # Reduce number of attackers and defenders until one wins
             while(num_att > 1 and num_def > 0):
 
-                # Determine number of dice for attacker
-                att_dices = num_att - 1
-                if att_dices > 3:
-                    att_dices = 3
-                
-                # Determine number of dice for defender
-                def_dices = num_def
-                if def_dices > 3:
-                    def_dices = 3
+                # Determine number of dice
+                att_dice = min(num_att - 1, 3)
+                def_dice = min(num_def, 3)
 
                 # Roll dice
-                att_rolls = [random.randint(1,6) for i in range(att_dices)]
-                def_rolls = [random.randint(1,6) for i in range(def_dices)]
+                att_rolls = [random.randint(1,6) for i in range(att_dice)]
+                def_rolls = [random.randint(1,6) for i in range(def_dice)]
 
                 # Reduce number of troops depending on dice rolls
                 while (len(att_rolls) > 0 and len(def_rolls) > 0):
