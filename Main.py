@@ -24,7 +24,7 @@ for initial_num_def in range (1, max_num_attackers + 1):
             num_def = initial_num_def
 
             # Kill troops until someone wins
-            while(num_att > 1 and num_def > 0):
+            while num_att > 1 and num_def > 0:
                 # Determine number of dice
                 att_dice = min(num_att - 1, 3)
                 def_dice = min(num_def, 3)
@@ -50,6 +50,5 @@ for initial_num_def in range (1, max_num_attackers + 1):
         
         # Print chance of winning
         chance_att_win = att_wins / simulations_per_scenario
-        chance_att_win_prcnt = int(chance_att_win * 100)
-        print("{}%".format(chance_att_win_prcnt), end = "\t")
+        print("{}%".format(int(chance_att_win * 100)), end = "\t")
     print("")
