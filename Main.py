@@ -55,6 +55,7 @@ for initial_num_def in range (1, max_num_attackers + 1):
             else:
                 def_wins += 1
         
+        # Print chance of winning for this scenario
         chance_att_win = att_wins / simulations_per_scenario
         chance_att_win_prcnt = int(chance_att_win * 100)
         print("{}%".format(chance_att_win_prcnt), end = "\t")
