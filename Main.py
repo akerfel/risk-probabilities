@@ -8,7 +8,7 @@ simulations_per_scenario = 1000
 max_num_attackers = 20
 max_num_defenders = 20
 
-# Print column headers, i.e. number of attackers
+# Print column headers
 print("-\t", end="")
 for i in range (2, max_num_attackers + 1):
     print("{}".format(i), end = "\t")
@@ -23,7 +23,7 @@ for initial_num_def in range (1, max_num_attackers + 1):
             num_att = initial_num_att
             num_def = initial_num_def
 
-            # Reduce number of attackers and defenders until one wins
+            # Kill troops until someone wins
             while(num_att > 1 and num_def > 0):
 
                 # Determine number of dice
@@ -34,7 +34,7 @@ for initial_num_def in range (1, max_num_attackers + 1):
                 att_rolls = [random.randint(1,6) for i in range(att_dice)]
                 def_rolls = [random.randint(1,6) for i in range(def_dice)]
 
-                # Reduce number of troops depending on dice rolls
+                # Kill troops
                 while (len(att_rolls) > 0 and len(def_rolls) > 0):
                     att_best_dice = att_rolls.pop(att_rolls.index(max(att_rolls)))
                     def_best_dice = def_rolls.pop(def_rolls.index(max(def_rolls)))
@@ -49,7 +49,7 @@ for initial_num_def in range (1, max_num_attackers + 1):
             else:
                 def_wins += 1
         
-        # Print chance of winning for this scenario
+        # Print chance of winning
         chance_att_win = att_wins / simulations_per_scenario
         chance_att_win_prcnt = int(chance_att_win * 100)
         print("{}%".format(chance_att_win_prcnt), end = "\t")
