@@ -1,3 +1,3 @@
 # risk-probabilities
 
-![chrome_ZIjao5qmWV](https://user-images.githubusercontent.com/45148959/205713035-a920179c-c68f-4774-8db1-b28f7f894307.png)
+![chrome_idK8u9GTWH](https://user-images.githubusercontent.com/45148959/205713119-838f5062-4c24-4e08-b244-4a85a97bd2e6.png)
