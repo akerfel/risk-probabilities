@@ -2,7 +2,7 @@
 
 Calculate probabilities for winning battles in the board game Risk. Made with Python.
 
-This program determines the probability of victory for an attacker, given the number of troops on both sides. The attacker has a certain number of troops in a given region and is attempting to take over an enemy region with a specific number of defenders. The attacker is considered victorious if they are able to eliminate all of the defenders, while the defender wins if the number of attacking troops is reduced to just one (at which point the attack is no longer allowed to continue).
+To be more specific, this program determines the probability of victory for an attacker, given the number of troops on both sides. The attacker has a certain number of troops in a given region and is attempting to take over an enemy region with a specific number of defenders. The attacker is considered victorious if they are able to eliminate all of the defenders, while the defender wins if the number of attacking troops is reduced to just one (at which point the attack is no longer allowed to continue).
 
 ## Table
 
